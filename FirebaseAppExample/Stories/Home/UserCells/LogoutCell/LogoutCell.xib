@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LogoutCell" id="Qn8-kC-V5k" customClass="LogoutCell" customModule="HelpPoints" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="405" height="108"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="405" height="108"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YHw-iK-AvP" userLabel="Content View">
+                        <rect key="frame" x="0.0" y="0.0" width="405" height="108"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sJH-2g-k4S">
+                        <rect key="frame" x="20" y="0.0" width="365" height="50"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="byz-zY-bii">
+                                <rect key="frame" x="19" y="12" width="26" height="26"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="0pH-gi-cxZ"/>
+                                    <constraint firstAttribute="width" secondItem="byz-zY-bii" secondAttribute="height" multiplier="1:1" id="Zy4-ws-Qm7"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="0ae-Rr-MvS">
+                                <rect key="frame" x="20" y="15.5" width="305" height="19.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Odhlásiť sa" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRP-HR-0pN">
+                                        <rect key="frame" x="0.0" y="0.0" width="305" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <color key="textColor" red="0.59335542929292928" green="0.068541725891879596" blue="0.09307175330932535" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Přidejte si upozornění na servis, přezutí, ..." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ml5-pG-DdI">
+                                        <rect key="frame" x="0.0" y="0.0" width="305" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icForward" translatesAutoresizingMaskIntoConstraints="NO" id="idE-bJ-UcV">
+                                <rect key="frame" x="341.5" y="18.5" width="8.5" height="13"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="13" id="EIr-Bd-lds"/>
+                                    <constraint firstAttribute="width" secondItem="idE-bJ-UcV" secondAttribute="height" multiplier="13:20" id="jrw-CI-vfs"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="byz-zY-bii" firstAttribute="leading" secondItem="sJH-2g-k4S" secondAttribute="leading" constant="19" id="7NY-8l-iZA"/>
+                            <constraint firstItem="0ae-Rr-MvS" firstAttribute="centerY" secondItem="sJH-2g-k4S" secondAttribute="centerY" id="9Tc-CK-Tlq"/>
+                            <constraint firstAttribute="height" constant="50" id="9aR-yt-U3Z"/>
+                            <constraint firstItem="idE-bJ-UcV" firstAttribute="centerY" secondItem="sJH-2g-k4S" secondAttribute="centerY" id="AH5-jw-OKF"/>
+                            <constraint firstItem="0ae-Rr-MvS" firstAttribute="leading" secondItem="sJH-2g-k4S" secondAttribute="leading" constant="20" id="CQ1-NT-rov"/>
+                            <constraint firstAttribute="trailing" secondItem="idE-bJ-UcV" secondAttribute="trailing" constant="15" id="Cmu-c0-lxe"/>
+                            <constraint firstItem="byz-zY-bii" firstAttribute="centerY" secondItem="sJH-2g-k4S" secondAttribute="centerY" id="G5V-Rb-GnV"/>
+                            <constraint firstAttribute="trailing" secondItem="0ae-Rr-MvS" secondAttribute="trailing" constant="40" id="PcV-Qw-Vus"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="sJH-2g-k4S" firstAttribute="leading" secondItem="Qn8-kC-V5k" secondAttribute="leading" constant="20" id="7qo-Cw-hUf"/>
+                <constraint firstItem="YHw-iK-AvP" firstAttribute="top" secondItem="Qn8-kC-V5k" secondAttribute="top" id="D8x-sJ-Aon"/>
+                <constraint firstAttribute="trailing" secondItem="YHw-iK-AvP" secondAttribute="trailing" id="QcK-0J-2f8"/>
+                <constraint firstItem="sJH-2g-k4S" firstAttribute="top" secondItem="Qn8-kC-V5k" secondAttribute="top" id="nq2-kr-pga"/>
+                <constraint firstAttribute="trailing" secondItem="sJH-2g-k4S" secondAttribute="trailing" constant="20" id="tib-zO-yIa"/>
+                <constraint firstItem="YHw-iK-AvP" firstAttribute="leading" secondItem="Qn8-kC-V5k" secondAttribute="leading" id="uRE-xl-DJJ"/>
+                <constraint firstAttribute="bottom" secondItem="YHw-iK-AvP" secondAttribute="bottom" id="xK5-qA-jLu"/>
+            </constraints>
+            <size key="customSize" width="405" height="108"/>
+            <connections>
+                <outlet property="titleLabel" destination="FRP-HR-0pN" id="3P6-Hi-t6w"/>
+            </connections>
+            <point key="canvasLocation" x="44" y="-3.5982008995502253"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icForward" width="238" height="385"/>
+    </resources>
+</document>

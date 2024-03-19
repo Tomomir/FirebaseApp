@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="hvM-iD-sv8">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Detail View Controller-->
+        <scene sceneID="wNu-vz-AgM">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewControllerID" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="mrg-aK-cPW" customClass="DetailViewController" customModule="FirebaseAppExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lNf-Tp-JWb"/>
+                        <viewControllerLayoutGuide type="bottom" id="PXa-7e-hdt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xRA-Nz-89m">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PSl-rC-bNo">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="472"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="laJ-pM-9d5">
+                                <rect key="frame" x="167.66666666666666" y="463" width="40" height="4"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="HJq-Tr-edL"/>
+                                    <constraint firstAttribute="height" constant="4" id="VJH-4K-7a1"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hzh-Ht-6uV">
+                                <rect key="frame" x="0.0" y="472" width="375" height="340"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KOZ-RX-OyZ">
+                                        <rect key="frame" x="20" y="45" width="335" height="250"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="KOZ-RX-OyZ" secondAttribute="trailing" constant="20" symbolic="YES" id="G5m-vn-CJs"/>
+                                    <constraint firstAttribute="bottom" secondItem="KOZ-RX-OyZ" secondAttribute="bottom" constant="45" id="Kx4-pO-anG"/>
+                                    <constraint firstItem="KOZ-RX-OyZ" firstAttribute="top" secondItem="hzh-Ht-6uV" secondAttribute="top" constant="45" id="SzQ-Xl-ysZ"/>
+                                    <constraint firstAttribute="height" constant="340" id="tYN-iI-EhB"/>
+                                    <constraint firstItem="KOZ-RX-OyZ" firstAttribute="leading" secondItem="hzh-Ht-6uV" secondAttribute="leading" constant="20" symbolic="YES" id="v0l-9F-v07"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="hzh-Ht-6uV" secondAttribute="trailing" id="ImV-hQ-1ip"/>
+                            <constraint firstAttribute="bottom" secondItem="hzh-Ht-6uV" secondAttribute="bottom" id="S1k-jO-K0R"/>
+                            <constraint firstItem="hzh-Ht-6uV" firstAttribute="leading" secondItem="xRA-Nz-89m" secondAttribute="leading" id="U3n-7C-ftp"/>
+                            <constraint firstItem="hzh-Ht-6uV" firstAttribute="top" secondItem="PSl-rC-bNo" secondAttribute="bottom" id="eBj-iI-eXF"/>
+                            <constraint firstItem="hzh-Ht-6uV" firstAttribute="top" secondItem="laJ-pM-9d5" secondAttribute="bottom" constant="5" id="hXl-GM-WkO"/>
+                            <constraint firstItem="laJ-pM-9d5" firstAttribute="centerX" secondItem="xRA-Nz-89m" secondAttribute="centerX" id="pEm-eg-WpN"/>
+                            <constraint firstItem="PSl-rC-bNo" firstAttribute="top" secondItem="xRA-Nz-89m" secondAttribute="top" id="uGS-Zc-cn7"/>
+                            <constraint firstItem="PSl-rC-bNo" firstAttribute="leading" secondItem="xRA-Nz-89m" secondAttribute="leading" id="wfe-A0-gTK"/>
+                            <constraint firstAttribute="trailing" secondItem="PSl-rC-bNo" secondAttribute="trailing" id="yfd-1h-Bph"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="fO7-ju-87H"/>
+                    <connections>
+                        <outlet property="cardView" destination="hzh-Ht-6uV" id="Ehq-ad-kpl"/>
+                        <outlet property="cardViewHeightConst" destination="tYN-iI-EhB" id="WH1-Yd-o5y"/>
+                        <outlet property="detailTextView" destination="KOZ-RX-OyZ" id="KkC-46-h8C"/>
+                        <outlet property="tapView" destination="PSl-rC-bNo" id="l7H-2d-Bgq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SPs-1e-mb8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="904.79999999999995" y="151.47783251231527"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Lx0-LG-Xao">
+            <objects>
+                <navigationController storyboardIdentifier="DetailNavigationControllerID" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" navigationBarHidden="YES" id="hvM-iD-sv8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8v9-Nz-rwX">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="mrg-aK-cPW" kind="relationship" relationship="rootViewController" id="S4I-jL-86s"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="frx-vs-cJh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="205.59999999999999" y="152.47376311844079"/>
+        </scene>
+    </scenes>
+</document>
